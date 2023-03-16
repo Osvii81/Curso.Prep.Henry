@@ -7,6 +7,7 @@ function mayuscula(nombre) {
 }
 
 function invocarCallback(cb) {
+    cb();
   // Invoca al callback `cb`
   //Tu código:
 }
@@ -55,3 +56,27 @@ module.exports = {
   map,
   filter
 };
+
+
+  function Saludar (sexo, usuario){
+    var f,m;
+    if (sexo == f ){
+      console.log("Bienvenida " + usuario + " Y eres Mujer");
+    }else{
+      console.log("Bienvenido " + usuario + " Y eres Hombre");
+    }
+  }
+
+  function Despido (usuario){
+    console.log("Adios " + usuario + "!!" );
+  }
+
+  function crearSaludo(usuario, saludo){
+    return saludo(usuario);
+  }
+
+
+  
+  crearSaludo("Daniel", Saludar);
+  crearSaludo("Daniel", Despido);
+
