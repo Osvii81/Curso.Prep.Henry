@@ -7,7 +7,7 @@ function mayuscula(nombre) {
 }
 
 function invocarCallback(cb) {
-    cb();
+  cb();
   // Invoca al callback `cb`
   //Tu código:
 }
@@ -79,4 +79,18 @@ module.exports = {
   
   crearSaludo("Daniel", Saludar);
   crearSaludo("Daniel", Despido);
+
+  function Hola(usu){
+    console.log("Bienvenido " + usuario);  
+  }
+
+  function Adios (usu){
+    console.log("Adios " + usu)
+  }
+
+  function Crear(usu, cb){
+    return cb(usu);
+  }
+
+  Crear("Osvi",Adios);
 
