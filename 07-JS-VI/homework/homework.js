@@ -8,6 +8,7 @@ function mayuscula(nombre) {
 
 function invocarCallback(cb) {
   cb();
+  // Invocando
   // Invoca al callback `cb`
   //Tu código:
 }
